@@ -1,9 +1,26 @@
 .main-grid {
   display: grid;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  grid-gap: 0px;
+
   grid-template-columns: auto auto;
+}
+.navbar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  z-index: 1000 !important;
+  justify-content: flex-end;
+
+  padding-top: 20px;
+}
+.logo-container {
+  width: 80vw;
+}
+.login-or-signup-flex {
+  background: #ffffff;
+  display: flex;
+}
+.two-headed-icon {
+  width: 5vw;
 }
 .map-picture-container {
   background-color: #3e3b5d;
@@ -48,7 +65,7 @@ hr.line {
 .blue-hint-container {
   position: relative;
 }
-.dropdown-units {
+.dropdown-area-units {
   position: relative;
 }
 
@@ -96,4 +113,7 @@ hr.line {
 .select-items div:hover,
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+}
+.generate-report-button-container {
+  margin-top: 14vh;
 }
