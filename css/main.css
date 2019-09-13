@@ -1,0 +1,99 @@
+.main-grid {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-gap: 0px;
+  grid-template-columns: auto auto;
+}
+.map-picture-container {
+  background-color: #3e3b5d;
+  height: 100vh;
+  width: 30vw;
+
+  position: fixed;
+}
+.form-container {
+  height: 100vh;
+  padding-left: 10vw;
+  padding-top: 10vh;
+  margin-left: 30vw;
+}
+.form-individual-container {
+  height: auto;
+  width: 50vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.grid-item-2,
+.grid-item-1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.grid-item-1 {
+  justify-content: flex-start;
+}
+hr.line {
+  border-top: 2px black;
+  margin-top: 12px;
+}
+.example-text-container {
+  padding-top: 2px;
+}
+.blue-hint-container {
+  position: relative;
+}
+.dropdown-units {
+  position: relative;
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}

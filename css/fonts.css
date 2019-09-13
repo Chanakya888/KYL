@@ -1,0 +1,11 @@
+.form-placeholder-text {
+  font-size: 33px;
+  font-weight: bolder;
+}
+
+.example-text-font-changes {
+  font-size: 14px;
+  font-weight: lighter;
+  font-style: italic;
+  opacity: 0.5;
+}
